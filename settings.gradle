@@ -1,1 +1,8 @@
 rootProject.name = 'java-instrumentation-template'
+include 'oak-api'
+include 'oak-blob'
+include 'oak-core'
+include 'oak-jcr'
+include 'oak-segment-tar'
+include 'oak-store-composite'
+include 'oak-store-document'
