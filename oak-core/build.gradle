@@ -12,6 +12,7 @@ dependencies {
    implementation 'com.newrelic.agent.java:newrelic-api:6.4.0'
    implementation fileTree(include: ['*.jar'], dir: '../libs')
    implementation fileTree(include: ['*.jar'], dir: '../test-lib')
+    implementation project(":common")
 }
 
 jar {

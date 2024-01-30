@@ -173,6 +173,11 @@ subprojects {
     testImplementation 'com.newrelic.agent.java:newrelic-agent:' + project.javaAgentVersion
   }
 
+  jar {
+    from project.sourceSets.main.output
+    from project(":common").sourceSets.main.output
+  }
+
   task install(dependsOn: buildIfNeeded, type: Copy) {
     description = 'Copies compiled jar to the NEW_RELIC_EXTENSIONS_DIR.'
     group  = 'New Relic'
