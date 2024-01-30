@@ -24,8 +24,6 @@ public class Query_Weaved {
 		Map<String, Object> attrs = new HashMap<>();
 		Result result = null;
 
-		logger.log(Level.FINER, "entry: executeQuery()");
-
 		agent.getTracedMethod().setMetricName(new String[] {
 			"Custom",
 			"JackRabbit",
@@ -103,27 +101,10 @@ public class Query_Weaved {
 		}
 
 		try {
-			if (logger.isLoggable(Level.FINEST)) {
-				logger.log(
-					Level.FINEST,
-					"calling original method"
-				);
-			}
-
 			result = Weaver.callOriginal();
 		} catch (Throwable t) {
-			logger.log(
-				Level.SEVERE,
-				t,
-				"caught exception in original method: {0}",
-				t.getMessage()
-			);
-
 			NewRelic.noticeError(t);
-
 			throw t;
-		} finally {
-			logger.log(Level.FINER, "exit: executeQuery()");
 		}
 
 		return result;
