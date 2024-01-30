@@ -19,12 +19,11 @@ public class Query_Weaved {
 	@Trace(dispatcher = true)
 	public Result executeQuery() {
 		Agent agent = NewRelic.getAgent();
-		Logger logger = agent.getLogger();
 		TracedMethod method = agent.getTracedMethod();
 		Map<String, Object> attrs = new HashMap<>();
 		Result result = null;
 
-		agent.getTracedMethod().setMetricName(new String[] {
+		method.setMetricName(new String[] {
 			"Custom",
 			"JackRabbit",
 			"Oak",
