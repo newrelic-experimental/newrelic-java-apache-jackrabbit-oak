@@ -9,7 +9,6 @@ import org.apache.jackrabbit.oak.api.Result;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
 
 @Weave(
 	originalName = "org.apache.jackrabbit.oak.query.Query",
