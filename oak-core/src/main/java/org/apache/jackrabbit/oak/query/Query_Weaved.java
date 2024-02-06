@@ -26,6 +26,7 @@ public class Query_Weaved {
 			"Custom",
 			"JackRabbit",
 			"Oak",
+			"Query",
 			getClass().getSimpleName(),
 			"executeQuery"
 		});
@@ -98,13 +99,6 @@ public class Query_Weaved {
 			method.addCustomAttributes(attrs);
 		}
 
-		try {
-			result = Weaver.callOriginal();
-		} catch (Throwable t) {
-			NewRelic.noticeError(t);
-			throw t;
-		}
-
-		return result;
+		return Weaver.callOriginal();
 	}
 }
