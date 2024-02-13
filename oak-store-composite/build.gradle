@@ -4,14 +4,15 @@
 apply plugin: 'java'
 
 dependencies {
-	implementation 'org.apache.jackrabbit:oak-store-composite:1.10.0'
 
+	implementation 'org.apache.jackrabbit:oak-store-composite:1.10.0'
 
    // New Relic Java Agent dependencies
    implementation 'com.newrelic.agent.java:newrelic-agent:6.4.0'
    implementation 'com.newrelic.agent.java:newrelic-api:6.4.0'
    implementation fileTree(include: ['*.jar'], dir: '../libs')
    implementation fileTree(include: ['*.jar'], dir: '../test-lib')
+    implementation project(":common")
 }
 
 jar {
@@ -29,4 +30,5 @@ verifyInstrumentation {
   // Example:
   // passes 'javax.servlet:servlet-api:[2.2,2.5]'
   // exclude 'javax.servlet:servlet-api:2.4.public_draft'
+    passes 'org.apache.jackrabbit:oak-store-composite:[1.10.0]'
 }
