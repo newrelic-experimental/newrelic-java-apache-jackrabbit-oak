@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="src" path="/common"/>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-core/1.16.0/fd48b4ee42b1cbd578f619d45261ad9688c6697d/oak-core-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-core/1.16.0/eb104c10da1ec5e4c1acac501fac5a6ab638cd9c/oak-core-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.java/newrelic-agent/6.4.0/e640c171a471a3cf07a6ab7c248640ffc9e10953/newrelic-agent-6.4.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.java/newrelic-agent/6.4.0/716c0521d4baa12d9f2b0a005e1ee06a9c180214/newrelic-agent-6.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/com/newrelic/agent/java/newrelic-api/6.4.0/newrelic-api-6.4.0-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/com/newrelic/agent/java/newrelic-api/6.4.0/newrelic-api-6.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-security-spi/1.16.0/f7756f9751ee9d72bc6d02b1eb29cabb58a62a59/oak-security-spi-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-security-spi/1.16.0/ce09f4940739b76b175e04ba728b6e7202193bd2/oak-security-spi-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.component.annotations/1.3.0/987e7f0748a883a66952dc6cc5fefd6e97ab7f84/org.osgi.service.component.annotations-1.3.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.component.annotations/1.3.0/ef17ec0e7f73cd144599da108d72a24285d1f5d5/org.osgi.service.component.annotations-1.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.metatype.annotations/1.3.0/3b9741bdfadaa42bd1a18d9ee20b1c9e312e2d69/org.osgi.service.metatype.annotations-1.3.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.metatype.annotations/1.3.0/793a335fb4d18190a2e7a89614001c65853c91c5/org.osgi.service.metatype.annotations-1.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-query-spi/1.16.0/beeb09f72f80bf965fc04af6021dc2d469d1acd9/oak-query-spi-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-query-spi/1.16.0/3d00210941d936b9f5871cf1688b361959696a69/oak-query-spi-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-blob-plugins/1.16.0/52623236b44f40c69bf0b61edd0d8df6fc7fd7e8/oak-blob-plugins-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-blob-plugins/1.16.0/6617a82a7d82d0368d3e7a73b640d1bc0808b7e8/oak-blob-plugins-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-store-spi/1.16.0/52e0a6f4488a9e7081aeab89dcfb46d09b943e42/oak-store-spi-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-store-spi/1.16.0/6705cbfad57f342623e16409398c916a176ff13b/oak-store-spi-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-core-spi/1.16.0/ea59dc8fdb0bfcac723c5a1dec65505ddcf3623/oak-core-spi-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-core-spi/1.16.0/fe5d4170050166b9dff88f94aae96a1f524cd21e/oak-core-spi-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-jackrabbit-api/1.16.0/236d41e693c1ea40c4065a1ccb0a2fc9437e32f2/oak-jackrabbit-api-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-jackrabbit-api/1.16.0/3abf7d370e12d2cd2aa5268e8e9498c4900ef942/oak-jackrabbit-api-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-api/1.16.0/284a6b68cd31566f3f4d79e076b31e615188340e/oak-api-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-api/1.16.0/e17ad50504f569b353c90596d571d6fefd235909/oak-api-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-blob/1.16.0/8fac5c38acc129daf547805ae5a2f978079d30c9/oak-blob-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-blob/1.16.0/36a9251e9272d79b36b21fc2082b0a07e9ca4431/oak-blob-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-commons/1.16.0/302a7cfccef2fae801658063f997aaf2a8af7057/oak-commons-1.16.0-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/oak-commons/1.16.0/9f40e71db8646cd8b4b78721ef3aa447c4e532e2/oak-commons-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/com/google/guava/guava/15.0/guava-15.0-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/jackrabbit-data/2.18.2/94a017d8e7b1ddb6000982ab2db5099fe76ba32/jackrabbit-data-2.18.2-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/jackrabbit-data/2.18.2/f8f3473e6561e2a8c34401cb526933d652574d2b/jackrabbit-data-2.18.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/javax/jcr/jcr/2.0/jcr-2.0-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/javax/jcr/jcr/2.0/jcr-2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/jackrabbit-jcr-commons/2.18.2/f3620623c32d94e1d463999d3d8332af75d04173/jackrabbit-jcr-commons-2.18.2-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/jackrabbit-jcr-commons/2.18.2/34d2367bcc07f6a47da387b6df73a27858a16655/jackrabbit-jcr-commons-2.18.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.26/jcl-over-slf4j-1.7.26-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.26/jcl-over-slf4j-1.7.26.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/commons-codec/commons-codec/1.12/commons-codec-1.12-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/commons-codec/commons-codec/1.12/commons-codec-1.12.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/jackrabbit-api/2.18.2/c2b79f561283a5c966a54bc135a537a7836db949/jackrabbit-api-2.18.2-sources.jar" kind="lib" path="/Users/dhilpipre/.gradle/caches/modules-2/files-2.1/org.apache.jackrabbit/jackrabbit-api/2.18.2/eb5240ca78b66b4e8166745b5074e39d5d3dca9b/jackrabbit-api-2.18.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/org/jetbrains/annotations/16.0.3/annotations-16.0.3-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/org/jetbrains/annotations/16.0.3/annotations-16.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dhilpipre/.m2/repository/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar" kind="lib" path="/Users/dhilpipre/.m2/repository/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/libs/agent-bridge-datastore.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/libs/agent-bridge.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/libs/newrelic-agent-6.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/libs/newrelic-weaver-scala-api.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/libs/newrelic-weaver-api.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/libs/newrelic-api.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dhilpipre/Open-Source/newrelic-java-apache-jackrabbit-oak/test-lib/instrumentation-test.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+</classpath>

@@ -1,3 +1,5 @@
+package org.apache.jackrabbit.oak.segment;
+
 import com.newrelic.api.agent.NewRelic;
 import com.newrelic.api.agent.Trace;
 import com.newrelic.api.agent.weaver.MatchType;
@@ -5,8 +7,6 @@ import com.newrelic.api.agent.weaver.Weave;
 import com.newrelic.api.agent.weaver.Weaver;
 import com.newrelic.instrumentation.labs.Constants;
 import com.newrelic.instrumentation.labs.Instrument;
-import org.apache.jackrabbit.oak.segment.RecordId;
-import org.apache.jackrabbit.oak.segment.SegmentBufferWriter;
 import org.apache.jackrabbit.oak.segment.file.tar.GCGeneration;
 
 import java.io.IOException;
