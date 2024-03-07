@@ -4,15 +4,15 @@
 - Address PR comments
 - Remove logger and use method to setMetricName
 - Remove unused import
-- Erge pull request #1 from newrelic-experimental/feat/instrument-oak-core
+- Merged pull request #1 from newrelic-experimental/feat/instrument-oak-core
 - Instrument oak-api blob provider and query engine
-- Erge pull request #2 from newrelic-experimental/feat/instrument-oak-api
+- Merged pull request #2 from newrelic-experimental/feat/instrument-oak-api
 - Instrument the oak-blob package
-- Erge pull request #3 from newrelic-experimental/feat/instrument-oak-blob
+- Merged pull request #3 from newrelic-experimental/feat/instrument-oak-blob
 - Instrument the oak-segment-tar package
-- Erge pull request #4 from newrelic-experimental/feat/instrument-oak-segment-tar
+- Merged pull request #4 from newrelic-experimental/feat/instrument-oak-segment-tar
 - Instrument oak-store-composite
-- Erge pull request #5 from newrelic-experimental/feat/instrument-oak-store-composite
+- Merged pull request #5 from newrelic-experimental/feat/instrument-oak-store-composite
 
 ### Bug Fixes
 - Factor out constants to fix IllegalAccessException
