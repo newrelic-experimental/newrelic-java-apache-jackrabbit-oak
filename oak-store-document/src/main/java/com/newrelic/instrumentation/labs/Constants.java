@@ -1,6 +1,7 @@
 package com.newrelic.instrumentation.labs;
 
 import org.apache.jackrabbit.oak.plugins.document.Commit;
+import org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore;
 import org.apache.jackrabbit.oak.plugins.document.DocumentStore;
 
 public interface Constants {
@@ -16,14 +17,13 @@ public interface Constants {
 		"applyToCache"
 	};
 
-	String OAK_COMMIT_IS_BRANCH_COMMIT = "oakIsBranchCommit";
+	String OAK_IS_BRANCH_COMMIT = "oakIsBranchCommit";
 	String OAK_DOCUMENT_NODE_STORE_CLUSTER_ID = "oakDocumentNodeStoreClusterId";
 	String OAK_DOCUMENT_NODE_STORE_INSTANCE_ID
 		= "oakDocumentNodeStoreInstanceId";
-	String OAK_COMMIT_REVISION_VECTOR_MEMORY = "oakCommitRevisionVectorMemory";
-	String OAK_COMMIT_REVISION_VECTOR_COUNT = "oakCommitRevisionVectorCount";
-	String OAK_COMMIT_REVISION_VECTOR_HAS_BRANCH_REVISION
-		= "oakCommitRevisionVectorHasBranchRevision";
+	String OAK_REVISION_VECTOR_MEMORY = "oakRevisionVectorMemory";
+	String OAK_REVISION_VECTOR_COUNT = "oakRevisionVectorCount";
+	String OAK_REVISION_VECTOR_IS_BRANCH = "oakRevisionVectorIsBranch";
 	String OAK_PREV_REVISION_TIMESTAMP = "oakPrevRevisionTimestamp";
 	String OAK_PREV_REVISION_COUNTER = "oakPrevRevisionCounter";
 	String OAK_PREV_REVISION_CLUSTER_ID = "oakPrevRevisionClusterId";
@@ -245,4 +245,56 @@ public interface Constants {
 
 	String OAK_INDEXED_PROPERTY_END_VALUE =
 		"oakIndexedPropertyEndValue";
+
+	String DOCUMENT_NODE_STORE_BRANCH_CLASS_NAME =
+		DocumentNodeStore.class.getSimpleName();
+
+	String[] DOCUMENT_NODE_STORE_BRANCH_MERGE_METRIC_NAME =
+		new String[]{
+			"Custom",
+			"JackRabbit",
+			"Oak",
+			"Plugins",
+			"Document",
+			DOCUMENT_NODE_STORE_BRANCH_CLASS_NAME,
+			"merge"
+		};
+
+	String OAK_COMMIT_SESSION_ID = "oakCommitSessionId";
+	String OAK_COMMIT_DATE = "oakCommitDate";
+	String OAK_COMMIT_IS_EXTERNAL = "oakCommitIsExternal";
+	String OAK_COMMIT_PATH = "oakCommitPath";
+	String OAK_NODE_EXISTS = "oakNodeExists";
+	String OAK_NODE_PROPERTY_COUNT = "oakNodePropertyCount";
+
+	String[] DOCUMENT_NODE_STORE_BRANCH_PERSIST_METRIC_NAME =
+		new String[]{
+			"Custom",
+			"JackRabbit",
+			"Oak",
+			"Plugins",
+			"Document",
+			DOCUMENT_NODE_STORE_BRANCH_CLASS_NAME,
+			"persist"
+		};
+
+	String OAK_CHANGE_STATE_PREFIX = "oakChangeState";
+	String OAK_BASE_STATE_PREFIX = "oakBaseState";
+	String OAK_RESULT_STATE_PREFIX = "oakResultState";
+	String OAK_NODE_STATE_NODE_EXISTS = "NodeExists";
+	String OAK_NODE_STATE_NODE_PROPERTY_COUNT = "NodePropertyCount";
+	String OAK_DOCUMENT_NODE_STATE_NODE_MEMORY = "NodeMemory";
+	String OAK_DOCUMENT_NODE_STATE_NODE_PATH = "NodePath";
+	String OAK_DOCUMENT_NODE_STATE_NODE_HAS_NO_CHILDREN
+		= "NodeHasNoChildren";
+	String OAK_DOCUMENT_NODE_STATE_NODE_HAS_ONLY_BUNDLED_CHILDREN
+		= "NodeHasOnlyBundledChildren";
+	String OAK_DOCUMENT_NODE_STATE_NODE_IS_FROM_EXTERNAL_CHANGE
+		= "NodeIsFromExternalChange";
+	String OAK_DOCUMENT_NODE_STATE_PREV_REVISION_VECTOR_MEMORY
+		= "PrevRevisionVectorMemory";
+	String OAK_DOCUMENT_NODE_STATE_PREV_REVISION_VECTOR_COUNT
+		= "PrevRevisionVectorCount";
+	String OAK_DOCUMENT_NODE_STATE_PREV_REVISION_VECTOR_IS_BRANCH
+		= "PrevRevisionVectorIsBranch";
 }

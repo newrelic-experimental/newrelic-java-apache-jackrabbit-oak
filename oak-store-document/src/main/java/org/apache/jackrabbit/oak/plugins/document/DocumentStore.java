@@ -86,8 +86,7 @@ public class DocumentStore {
 		} catch (Exception e) {
 			if (e instanceof IllegalArgumentException) {
 				NewRelic.noticeError(e);
-			}
-			if (e instanceof DocumentStoreException) {
+			} else if (e instanceof DocumentStoreException) {
 				NewRelic.noticeError(e);
 			}
 
@@ -145,8 +144,7 @@ public class DocumentStore {
 		} catch (Exception e) {
 			if (e instanceof IllegalArgumentException) {
 				NewRelic.noticeError(e);
-			}
-			if (e instanceof DocumentStoreException) {
+			} else if (e instanceof DocumentStoreException) {
 				NewRelic.noticeError(e);
 			}
 

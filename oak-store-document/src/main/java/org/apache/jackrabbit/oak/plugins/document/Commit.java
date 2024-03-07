@@ -21,7 +21,7 @@ public class Commit {
 			NewRelic.getAgent().getTracedMethod()
 		)
 			.name(Constants.COMMIT_APPLY_TO_CACHE_METRIC_NAME)
-			.attr(Constants.OAK_COMMIT_IS_BRANCH_COMMIT, isBranchCommit);
+			.attr(Constants.OAK_IS_BRANCH_COMMIT, isBranchCommit);
 
 		if (this.nodeStore != null) {
 			instrument.attr(
@@ -36,15 +36,15 @@ public class Commit {
 
 		if (before != null) {
 			instrument.attr(
-				Constants.OAK_COMMIT_REVISION_VECTOR_MEMORY,
+				Constants.OAK_REVISION_VECTOR_MEMORY,
 				before.getMemory()
 			)
 				.attr(
-					Constants.OAK_COMMIT_REVISION_VECTOR_COUNT,
+					Constants.OAK_REVISION_VECTOR_COUNT,
 					before.getDimensions()
 				)
 				.attr(
-					Constants.OAK_COMMIT_REVISION_VECTOR_HAS_BRANCH_REVISION,
+					Constants.OAK_REVISION_VECTOR_IS_BRANCH,
 					before.isBranch()
 				);
 
