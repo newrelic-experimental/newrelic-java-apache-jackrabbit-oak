@@ -20,7 +20,6 @@ public class Query_Weaved {
 		Agent agent = NewRelic.getAgent();
 		TracedMethod method = agent.getTracedMethod();
 		Map<String, Object> attrs = new HashMap<>();
-		Result result = null;
 
 		method.setMetricName(new String[] {
 			"Custom",

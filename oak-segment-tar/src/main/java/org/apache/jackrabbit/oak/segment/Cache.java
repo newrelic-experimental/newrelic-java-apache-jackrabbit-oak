@@ -22,7 +22,6 @@ public class Cache<K,V> {
 		return Weaver.callOriginal();
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public void put(K key, V value){
 		new Instrument(
@@ -35,7 +34,6 @@ public class Cache<K,V> {
 		Weaver.callOriginal();
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public void put(K key, V value, byte cost){
 		new Instrument(

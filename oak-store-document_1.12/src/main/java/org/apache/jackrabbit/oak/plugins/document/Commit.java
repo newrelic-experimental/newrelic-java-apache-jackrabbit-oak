@@ -9,12 +9,10 @@ import com.newrelic.api.agent.weaver.Weaver;
 import com.newrelic.instrumentation.labs.Constants;
 import com.newrelic.instrumentation.labs.Instrument;
 
-@SuppressWarnings("unused")
 @Weave
 public class Commit {
 	protected final DocumentNodeStore nodeStore = Weaver.callOriginal();
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public void applyToCache(RevisionVector before, boolean isBranchCommit) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())

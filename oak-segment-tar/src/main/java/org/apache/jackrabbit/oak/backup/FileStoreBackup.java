@@ -18,7 +18,6 @@ import java.io.IOException;
 
 @Weave(type = MatchType.Interface)
 public class FileStoreBackup {
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace(dispatcher = true)
 	public void backup(
 		SegmentReader reader,

@@ -14,11 +14,9 @@ import com.newrelic.instrumentation.labs.Constants;
 import com.newrelic.instrumentation.labs.Instrument;
 import com.newrelic.instrumentation.labs.Utils;
 
-@SuppressWarnings("unused")
 @Weave
 abstract class DocumentNodeStoreBranch {
 
-	@SuppressWarnings("UnusedReturnValue")
 	private Instrument addCommitInfoAttributes(Instrument instrument, CommitInfo commitInfo) {
 		return instrument.attr(Constants.OAK_COMMIT_SESSION_ID, commitInfo.getSessionId())
 				.attr(Constants.OAK_COMMIT_DATE, commitInfo.getDate())
@@ -99,7 +97,6 @@ abstract class DocumentNodeStoreBranch {
 		}
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public void rebase() {
 		Weaver.callOriginal();
