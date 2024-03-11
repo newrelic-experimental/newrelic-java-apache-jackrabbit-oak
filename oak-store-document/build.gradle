@@ -26,6 +26,6 @@ jar {
 
 verifyInstrumentation {
 
-   passes 'org.apache.jackrabbit:oak-store-document:[1.10.0,)'
+   passes 'org.apache.jackrabbit:oak-store-document:[1.10.0,1.12.0)'
 }
 
