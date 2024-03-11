@@ -50,13 +50,36 @@ abstract class DocumentNodeStoreBranch {
 	}
 
 	@Trace
-	private DocumentNodeState persist(final NodeState toPersist, final DocumentNodeState base, final CommitInfo info) {
+	private DocumentNodeState persist(NodeState toPersist, DocumentNodeState base, CommitInfo info, MergeStats stats) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_NODE_STORE_BRANCH_PERSIST_METRIC_NAME);
 
 		addCommitInfoAttributes(Utils.addDocumentNodeStateAttributes(
 				Utils.addNodeStateAttributes(instrument, toPersist, Constants.OAK_CHANGE_STATE_PREFIX), base,
 				Constants.OAK_BASE_STATE_PREFIX), info);
+
+		try {
+			DocumentNodeState nodeState = Weaver.callOriginal();
+
+			Utils.addDocumentNodeStateAttributes(instrument, base, Constants.OAK_RESULT_STATE_PREFIX).record();
+
+			return nodeState;
+		} catch (Exception e) {
+			// noinspection ConstantValue
+			if (e instanceof ConflictException) {
+				NewRelic.noticeError(e);
+			} else if (e instanceof DocumentStoreException) {
+				NewRelic.noticeError(e);
+			}
+
+			throw e;
+		}
+	}
+
+	@Trace
+	private DocumentNodeState persist(Changes op, DocumentNodeState base, CommitInfo info) {
+		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
+				.name(Constants.DOCUMENT_NODE_STORE_BRANCH_PERSIST_METRIC_NAME);
 
 		try {
 			DocumentNodeState nodeState = Weaver.callOriginal();

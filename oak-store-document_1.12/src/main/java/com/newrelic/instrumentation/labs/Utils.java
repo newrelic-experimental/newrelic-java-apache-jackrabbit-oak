@@ -46,7 +46,6 @@ public class Utils implements AgentConfigListener {
 			String prefix) {
 		addNodeStateAttributes(instrument, nodeState, prefix)
 				.attr(prefix + Constants.OAK_DOCUMENT_NODE_STATE_NODE_MEMORY, nodeState.getMemory())
-				.attr(prefix + Constants.OAK_DOCUMENT_NODE_STATE_NODE_PATH, nodeState.getPath())
 				.attr(prefix + Constants.OAK_DOCUMENT_NODE_STATE_NODE_HAS_NO_CHILDREN, nodeState.hasNoChildren())
 				.attr(prefix + Constants.OAK_DOCUMENT_NODE_STATE_NODE_HAS_ONLY_BUNDLED_CHILDREN,
 						nodeState.hasOnlyBundledChildren())

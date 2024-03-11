@@ -30,5 +30,5 @@ verifyInstrumentation {
   // Example:
   // passes 'javax.servlet:servlet-api:[2.2,2.5]'
   // exclude 'javax.servlet:servlet-api:2.4.public_draft'
-    passes 'org.apache.jackrabbit:oak-store-document:[1.10.0]'
+    passes 'org.apache.jackrabbit:oak-store-document:[1.10.0,1.12.0)'
 }

@@ -44,7 +44,7 @@ public abstract class DocumentStore {
 		instrument.attr(Constants.OAK_DOCUMENT_UPDATE_OP_COUNT, updateOps.size());
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> boolean create(Collection<T> collection, List<UpdateOp> updateOps) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_CREATE_DOCUMENT_METRIC_NAME);
@@ -67,7 +67,7 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> List<T> createOrUpdate(Collection<T> collection, List<UpdateOp> updateOps) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_CREATE_OR_UPDATE_DOCUMENT_METRIC_NAME);
@@ -88,7 +88,7 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> T createOrUpdate(Collection<T> collection, UpdateOp updateOp) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_UPSERT_DOCUMENT_METRIC_NAME)
@@ -112,7 +112,7 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> T find(Collection<T> collection, String key, int maxCacheAge) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_FIND_DOCUMENT_METRIC_NAME).attr(Constants.OAK_DOCUMENT_ID, key)
@@ -135,7 +135,7 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> T findAndUpdate(Collection<T> collection, UpdateOp update) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_FIND_AND_UPDATE_DOCUMENT_METRIC_NAME)
@@ -202,7 +202,7 @@ public abstract class DocumentStore {
 		return iterator;
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public CacheInvalidationStats invalidateCache() {
 		new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_INVALIDATE_CACHE_METRIC_NAME).record();
@@ -211,7 +211,7 @@ public abstract class DocumentStore {
 	}
 
 	@SuppressWarnings("ResultOfMethodCallIgnored")
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> void invalidateCache(Collection<T> collection, String key) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_INVALIDATE_CACHE_COLLECTION_KEY_METRIC_NAME)
@@ -224,7 +224,7 @@ public abstract class DocumentStore {
 		Weaver.callOriginal();
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public CacheInvalidationStats invalidateCache(Iterable<String> keys) {
 		new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_INVALIDATE_CACHE_KEYS_METRIC_NAME).record();
@@ -256,7 +256,7 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> @NotNull List<T> query(Collection<T> collection, String fromKey, String toKey,
 			String indexedProperty, long startValue, int limit) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
@@ -283,7 +283,7 @@ public abstract class DocumentStore {
 	}
 
 	@SuppressWarnings("ResultOfMethodCallIgnored")
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> void remove(Collection<T> collection, List<String> keys) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_REMOVE_DOCUMENTS_METRIC_NAME).attr(Constants.OAK_ID_COUNT, keys.size());
@@ -327,7 +327,7 @@ public abstract class DocumentStore {
 	}
 
 	@SuppressWarnings("ResultOfMethodCallIgnored")
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> void remove(Collection<T> collection, String key) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
 				.name(Constants.DOCUMENT_STORE_REMOVE_DOCUMENT_METRIC_NAME).attr(Constants.OAK_DOCUMENT_ID, key);
@@ -347,7 +347,7 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@Trace
+	@Trace(dispatcher = true)
 	public <T extends Document> int remove(Collection<T> collection, String indexedProperty, long startValue,
 			long endValue) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
