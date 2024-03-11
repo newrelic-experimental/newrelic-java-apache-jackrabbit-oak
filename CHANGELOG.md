@@ -1,15 +1,12 @@
 ## Version: [v1.1.0](https://github.com/newrelic-experimental/newrelic-java-apache-jackrabbit-oak/releases/tag/v1.1.0) | Created: 2024-03-11
 ### Features
 - Instrumented Commit and DocumentStore
-- Erge branch 'main' into feat/instrument-oak-store-document
-- Erge pull request #6 from newrelic-experimental/feat/instrument-oak-store-document
-
-### Documentation
-- Instrumented most of oak-store-document
+- Merge branch 'main' into feat/instrument-oak-store-document
+- Merge pull request #6 from newrelic-experimental/feat/instrument-oak-store-document
 
 ### Bug Fixes
 - Added additional classes to oak-store-document and Version 1.12+
-- Ixed build store document verifyInstrumentation
+- Fixed build store document verifyInstrumentation
 
 ## Version: [v1.0.0](https://github.com/newrelic-experimental/newrelic-java-apache-jackrabbit-oak/releases/tag/v1.0.0) | Created: 2024-02-20
 ### Features
