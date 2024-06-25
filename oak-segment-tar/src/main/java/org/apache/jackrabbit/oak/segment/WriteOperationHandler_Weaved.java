@@ -51,7 +51,6 @@ class WriteOperationHandler_Weaved {
 		}
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace(dispatcher = true)
 	public void flush(SegmentStore store) {
 		new Instrument(NewRelic.getAgent().getTracedMethod())

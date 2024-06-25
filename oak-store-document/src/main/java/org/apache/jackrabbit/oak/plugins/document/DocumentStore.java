@@ -18,7 +18,6 @@ import com.newrelic.instrumentation.labs.Constants;
 import com.newrelic.instrumentation.labs.Instrument;
 import com.newrelic.instrumentation.labs.Utils;
 
-@SuppressWarnings("unused")
 @Weave(type = MatchType.Interface)
 public abstract class DocumentStore {
 	private <T extends Document> void addCollectionTypeAttribute(Instrument instrument, Collection<T> collection) {
@@ -210,7 +209,6 @@ public abstract class DocumentStore {
 		return Weaver.callOriginal();
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public <T extends Document> void invalidateCache(Collection<T> collection, String key) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
@@ -282,7 +280,6 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public <T extends Document> void remove(Collection<T> collection, List<String> keys) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())
@@ -326,7 +323,6 @@ public abstract class DocumentStore {
 		}
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace
 	public <T extends Document> void remove(Collection<T> collection, String key) {
 		Instrument instrument = new Instrument(NewRelic.getAgent().getTracedMethod())

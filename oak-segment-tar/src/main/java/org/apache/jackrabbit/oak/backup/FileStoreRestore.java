@@ -14,7 +14,6 @@ import java.io.IOException;
 
 @Weave(type = MatchType.Interface)
 public class FileStoreRestore {
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace(dispatcher = true)
 	public void restore(File source) {
 		new Instrument(
@@ -30,7 +29,6 @@ public class FileStoreRestore {
 		Weaver.callOriginal();
 	}
 
-	@SuppressWarnings("ResultOfMethodCallIgnored")
 	@Trace(dispatcher = true)
 	public void restore(File source, File destination) {
 		new Instrument(
