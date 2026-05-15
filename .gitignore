@@ -1,6 +1,5 @@
 .java-version
 .git
-.github
 .idea
 *.iml
 .gradle
